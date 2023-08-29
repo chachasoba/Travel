@@ -52,8 +52,19 @@ ScrollReveal().reveal(".blogs__card", {
   interval: 400,
 });
 
-// journals container
-ScrollReveal().reveal(".journals__card", {
+// whyus container
+ScrollReveal().reveal(".whyus__container .section__header", scrollRevealOption);
+ScrollReveal().reveal(".whyus__container .section__subheader", {
   ...scrollRevealOption,
-  interval: 400,
+  delay: 500,
+});
+
+ScrollReveal().reveal(".whyus__container .about__flex", {
+  ...scrollRevealOption,
+  delay: 1000,
+});
+
+ScrollReveal().reveal(".whyus__container .whyus__btn", {
+  ...scrollRevealOption,
+  delay: 1500,
 });
