@@ -229,7 +229,7 @@
     position: absolute;
     content: "";
     width: 100%;
-    height: 50%;
+    height: 40%;
     left: 0;
     bottom: 0;
     background-image: linear-gradient(to top, var(--primary-color), transparent);
@@ -237,7 +237,7 @@
   
   .discover__card__content {
     padding: 0 2rem;
-    transform: translateY(-50%);
+    transform: translateY(-20%);
   }
   
   .discover__card__content h4 {
@@ -262,107 +262,31 @@
     cursor: pointer;
   }
   
-  .blogs__container {
-    padding: 5rem 0;
-  }
-  
-  .blogs__grid {
-    margin-top: 4rem;
+  .whyus__container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
-  
-  .blogs__card {
-    position: relative;
-  }
-  
-  .blogs__card::after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background-image: linear-gradient(to top, var(--primary-color), transparent);
-  }
-  
-  .blogs__content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 2rem;
-    font-size: 1.2rem;
-    font-weight: 500;
-    z-index: 1;
-  }
-  
-  .journals__grid {
-    margin-top: 4rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-  }
-  
-  .journals__content {
-    padding: 2rem;
-    background-color: var(--primary-color-light);
-  }
-  
-  .journals__author {
-    margin-bottom: 1rem;
-    display: flex;
     align-items: center;
-    gap: 1rem;
   }
   
-  .journals__author img {
-    max-width: 30px;
-    border-radius: 100%;
+  .whyus__container :is(.section__header, .section__subheader) {
+    text-align: left;
+    margin-bottom: 2rem;
   }
   
-  .journals__author p {
-    font-size: 0.9rem;
-    opacity: 0.75;
+  .whyus__image img {
+    max-width: 450px;
+    margin: auto;
   }
   
-  .journals__content h4 {
-    margin-bottom: 0.5rem;
-    font-size: 1.1rem;
-    font-weight: 600;
-  }
-  
-  .journals__footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-  }
-  
-  .journals__footer p {
-    font-size: 0.9rem;
-    opacity: 0.5;
-  }
-  
-  .journals__footer span a {
-    font-size: 1.5rem;
-    color: var(--white);
-    opacity: 0.75;
-  }
-  
-  .journals__btn {
-    margin-top: 4rem;
-    text-align: center;
-  }
-  
-  .hero__container p {
-    text-align: center;
-    font-size: 12rem;
-    font-weight: 700;
-    background-image: url("assets/banner.jpg");
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 1px var(--extra-light);
+  .whyus__btn {
+    padding: 0.75rem 1.5rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    cursor: pointer;
   }
   
   .gallery__container {
@@ -541,9 +465,8 @@
       grid-template-columns: repeat(2, 1fr);
     }
   
-    .journals__grid {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1rem;
+    .whyus__image {
+        grid-area: 1/1/2/2;
     }
   
     .hero__container p {
@@ -589,8 +512,8 @@
       grid-template-columns: repeat(1, 1fr);
     }
   
-    .journals__grid {
-      grid-template-columns: repeat(1, 1fr);
+    .whyus__card {
+        border: none;
     }
   
     .hero__container p {
