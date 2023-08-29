@@ -16,6 +16,10 @@
     box-sizing: border-box;
   }
 
+  div.container {
+    background-color: white;
+  }
+
   header {
     background-image: linear-gradient(to top, var(--primary-color), transparent),
       url("Pictures/IMG_0003.jpg");
@@ -48,6 +52,7 @@
     font-size: 1.2rem;
     font-weight: 600;
     color: var(--white);
+    text-decoration: none;
   }
   
   .nav__links {
