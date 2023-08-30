@@ -17,10 +17,12 @@
         padding: 8px;
         border: 1px solid #eeeeee;
         border-radius: 4px;
-        box-sizing: border-box;
+        box-sizing:border-box;
         margin-top: 8px;
         margin-bottom: 16px;
         resize: vertical;
+
+        
       }
       input[type=submit] {
         background-color: #0a0d14;
@@ -306,16 +308,18 @@
         </select>
         <p for="tdates">Travel Dates:</p>
         &nbsp;
-        <p>
-        <label for="tdeparture">Departure</label>
-        <input type="date" id="departure" name="departure">
-        </p>
-        <p>
-        <label for="tdeparture">Return</label>
-        <input type="date" id="return" name="return">
-        </p>
+        <div class="tdate-container">
+          <p>
+          <label for="tdeparture">Departure</label>
+          <input type="date" id="departure" name="departure">
+          </p>
+          <p>
+          <label for="treturns" class="return">Return</label>
+          <input type="date" id="return" name="return">
+          </p>
+        </div>
         &nbsp;
-        <div>
+        <div class="'message">
         <label for="message">Message</label>
         <textarea id="message" name="message" placeholder="Type your message.." style="height:200px"></textarea>
         <input type="submit" value="Send">
