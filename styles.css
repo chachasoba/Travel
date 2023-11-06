@@ -10,6 +10,15 @@
     --header-font: "Lisu Bosa", serif;
   }
 
+  a, a:link, a:visited, a:focus, a:hover, a:active{
+    color:black;
+    text-decoration:none;
+  }
+
+  a:-webkit-any-link {
+    color:#000000;
+  }
+
   * {
     padding: 0;
     margin: 0;
@@ -41,7 +50,7 @@
     outline: none;
     border: none;
     font-size: 1rem;
-    color: var(--primary-color);
+    color: black;
     background-color: var(--secondary-color);
     cursor: pointer;
   }
@@ -197,6 +206,16 @@
     margin: auto;
   }
 
+  .aboutus__btn {
+    padding: 0.75rem 1.5rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: white;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+  }
+
   .discover {
     background-image: linear-gradient(
       to bottom,
@@ -284,7 +303,7 @@
     outline: none;
     border: none;
     font-size: 1rem;
-    color: var(--primary-color);
+    color: white;
     background-color: var(--secondary-color);
     cursor: pointer;
   }
